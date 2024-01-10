@@ -1,0 +1,34 @@
+Explication Projet Scrabble:
+
+
+Set<String> : Un ensemble (Set) est une collection qui ne permet pas de stocker des éléments en double.
+              En d'autres termes, chaque élément dans un ensemble doit être unique.
+              La syntaxe Set<String> indique que cet ensemble est spécifique aux chaînes de caractères (String).
+
+HashSet<> : Elle utilise une table de hachage pour stocker les éléments et fournit un accès constant (en moyenne)
+            aux éléments, ce qui en fait une structure de données efficace pour rechercher des éléments.
+            Comme toutes les implémentations de l'interface Set, HashSet ne permet pas de stocker des
+            éléments en double.
+
+
+Pour le tirage il faut separer le premier tirage des autres tirages car les autre tirage il a le choix entre
+completer son tirage de lettre avec de nouvelle lettre, passer son tour ...
+
+tableau a 3D pour le sachet avec lettre + frequence + nbpoint
+utiliser une array list pour gerer la suppression des lettres
+methode avec en parametre le nombre de lettre a piocher
+tester deja pour un tour de jeu
+
+"\u001B[48;2;" + couleur.getRed() + ";" + couleur.getGreen() + ";" + couleur.getBlue() + "m " :
+
+C'est une séquence d'échappement ANSI qui permet de définir la couleur de fond du texte dans la console.
+Les composants RVB de la couleur (Red, Green, Blue) sont extraits de l'objet Color passé en paramètre.
+Cette séquence indique que la couleur de fond de la console doit être définie avec les composants RVB spécifiés.
+
++ lettre + " :
+
+Cela ajoute la lettre spécifiée en paramètre à la séquence de couleur, donc la lettre apparaîtra avec la couleur de fond définie.
+
+\u001B[0m|" :
+
+C'est une autre séquence d'échappement ANSI qui réinitialise la couleur à la couleur par défaut de la console. Cela assure que les affichages ultérieurs dans la console ne sont pas affectés par la couleur définie précédemment.
